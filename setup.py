@@ -40,7 +40,6 @@ setup(
             'pytest-mock',
             'Sphinx',
             'sphinx_rtd_theme',
-
             'six>=1.10.0,<2.0',
             'gevent',
             'tornado',

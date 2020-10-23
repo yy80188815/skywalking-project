@@ -7,6 +7,7 @@ import unittest
 from tornado import version_info as tornado_version
 
 
+
 enabled_platforms = [
     'threads',
     'gevent',
@@ -24,9 +25,8 @@ if sys.version_info >= (3, 7):
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__package__)
 
-
 def import_test_module(test_name, platform):
-    full_path = '%s.%s.test_%s' % (__package__, test_name, platform)
+    full_path = '%s.%s.test_%s' % ("testbed", test_name, platform)
     try:
         return import_module(full_path)
     except ImportError:
